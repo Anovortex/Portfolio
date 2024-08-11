@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-        hey, I'm Asif
+        {`hey, I'm Asif`}
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
         {`I'm a full-stack developer (Front-end bias). I currently `}
@@ -31,9 +31,9 @@ export default function Page() {
             alt="mybee logo"
             style={{ display: 'inline-block', verticalAlign: 'middle' }}
           />{' '}
-          Mybee Digital Inc
+          {`Mybee Digital Inc`}
         </Badge>
-        .
+        {`.`}
       </p>
       {/* <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
         <div className="relative h-40">

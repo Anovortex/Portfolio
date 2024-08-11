@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 function Badge(props) {
   return (
@@ -17,11 +18,11 @@ export default function Page() {
         hey, I'm Asif
       </h1>
       <p className="prose prose-neutral dark:prose-invert">
-        I'm a full-stack developer (Front-end bias). I currently{' '}
-        <a href="/" className="">
-          work
-        </a>{' '}
-        as a junior full-stack developer at{' '}
+        {`I'm a full-stack developer (Front-end bias). I currently `}
+        <Link href="/work" className="">
+          {`work`}
+        </Link>{' '}
+        {`as a junior full-stack developer at `}
         <Badge href="https://mybee.app" className="">
           <Image
             src="/mybee.png"
@@ -34,7 +35,7 @@ export default function Page() {
         </Badge>
         .
       </p>
-      <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
+      {/* <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
         <div className="relative h-40">
           <Image
             alt="Me speaking on stage at React Summit about the future of Next.js"
@@ -95,7 +96,7 @@ export default function Page() {
             className="rounded-lg object-cover"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
